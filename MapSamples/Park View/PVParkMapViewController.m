@@ -134,6 +134,7 @@
 - (MKAnnotationView *)mapView:(MKMapView *)mapView viewForAnnotation:(id<MKAnnotation>)annotation {
     PVAttractionAnnotationView *annotationView = [[PVAttractionAnnotationView alloc] initWithAnnotation:annotation reuseIdentifier:@"Attraction"];
     annotationView.canShowCallout = YES;
+    annotationView.rightCalloutAccessoryView = [UIButton buttonWithType:UIButtonTypeDetailDisclosure];
     return annotationView;
 }
 
@@ -202,6 +203,21 @@
     [self.mapView addOverlay:batman];
     [self.mapView addOverlay:taz];
     [self.mapView addOverlay:tweety];
+}
+
+- (void)mapView:(MKMapView *)mapView annotationView:(MKAnnotationView *)view calloutAccessoryControlTapped:(UIControl *)control
+{
+    NSLog(@"Callout accessory view is selected");
+    NSLog(@"accessory button tapped for annotation %@", view.annotation);
+    PVAttractionAnnotation *annotation = (PVAttractionAnnotation *)view.annotation;
+    
+    NSDictionary *launchOptions = @{MKLaunchOptionsDirectionsModeKey : MKLaunchOptionsDirectionsModeDriving};
+    [annotation.mapItem openInMapsWithLaunchOptions:launchOptions];
+}
+
+- (void)mapView:(MKMapView *)mapView didSelectAnnotationView:(MKAnnotationView *)view
+{
+     NSLog(@"Callout is tapped");
 }
 
 @end

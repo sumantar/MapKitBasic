@@ -26,6 +26,7 @@
 		07866AE7165EE2B400D7BB3A /* Park_ViewTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 07866AE6165EE2B400D7BB3A /* Park_ViewTests.m */; };
 		07A2E1DF167988AA00355A96 /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 07A2E1DE167988AA00355A96 /* CoreLocation.framework */; };
 		07A98C031663F4E400D49A7A /* PVParkMapViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 07A98C021663F4E400D49A7A /* PVParkMapViewController.m */; };
+		DE38D7BC178BF04E002E43E9 /* AddressBook.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DE38D7BB178BF04E002E43E9 /* AddressBook.framework */; };
 		DEAA221A1779B74E001B4B83 /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DEAA22191779B74E001B4B83 /* MapKit.framework */; };
 		DEAA221D1779BB1E001B4B83 /* MagicMountain.plist in Resources */ = {isa = PBXBuildFile; fileRef = DEAA221C1779BB1E001B4B83 /* MagicMountain.plist */; };
 		DEAA22201779BBA4001B4B83 /* PVPark.m in Sources */ = {isa = PBXBuildFile; fileRef = DEAA221F1779BBA4001B4B83 /* PVPark.m */; };
@@ -88,6 +89,7 @@
 		07A2E1DE167988AA00355A96 /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
 		07A98C011663F4E400D49A7A /* PVParkMapViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PVParkMapViewController.h; sourceTree = "<group>"; };
 		07A98C021663F4E400D49A7A /* PVParkMapViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PVParkMapViewController.m; sourceTree = "<group>"; };
+		DE38D7BB178BF04E002E43E9 /* AddressBook.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AddressBook.framework; path = System/Library/Frameworks/AddressBook.framework; sourceTree = SDKROOT; };
 		DEAA22191779B74E001B4B83 /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
 		DEAA221C1779BB1E001B4B83 /* MagicMountain.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = MagicMountain.plist; sourceTree = "<group>"; };
 		DEAA221E1779BBA4001B4B83 /* PVPark.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PVPark.h; sourceTree = "<group>"; };
@@ -124,6 +126,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DE38D7BC178BF04E002E43E9 /* AddressBook.framework in Frameworks */,
 				DEAA221A1779B74E001B4B83 /* MapKit.framework in Frameworks */,
 				07A2E1DF167988AA00355A96 /* CoreLocation.framework in Frameworks */,
 				07866AB3165EE2B400D7BB3A /* UIKit.framework in Frameworks */,
@@ -224,6 +227,7 @@
 		07866AB1165EE2B400D7BB3A /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				DE38D7BB178BF04E002E43E9 /* AddressBook.framework */,
 				DEAA22191779B74E001B4B83 /* MapKit.framework */,
 				07A2E1DE167988AA00355A96 /* CoreLocation.framework */,
 				07866AB2165EE2B400D7BB3A /* UIKit.framework */,

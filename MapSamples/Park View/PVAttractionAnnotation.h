@@ -24,4 +24,6 @@ typedef NS_ENUM(NSInteger, PVAttractionType) {
 @property (nonatomic, strong) NSString *subtitle;
 @property (nonatomic) PVAttractionType type;
 
+- (MKMapItem*)mapItem;
+
 @end
